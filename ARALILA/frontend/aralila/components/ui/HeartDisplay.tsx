@@ -103,7 +103,7 @@ export const HeartsDisplay = ({ variant = "dark" }: HeartsDisplayProps) => {
     },
     dark: {
       container:
-        "bg-white/10 border-white/20 hover:bg-white/20 backdrop-blur-sm",
+        "bg-white/20 border-white/30 hover:bg-white/30 backdrop-blur-md shadow-lg shadow-purple-500/20",
       hearts: "text-white",
       timer: "text-purple-200",
     },
@@ -134,7 +134,7 @@ export const HeartsDisplay = ({ variant = "dark" }: HeartsDisplayProps) => {
         <span className={`text-sm font-bold ${currentStyle.hearts}`}>
           {hearts}
         </span>
-        {timeLeft > 0 && hearts === 0 && (
+        {timeLeft > 0 && (
           <>
             <span className={`text-sm ${currentStyle.timer}`}>•</span>
             <span className={`text-sm font-medium ${currentStyle.timer}`}>
